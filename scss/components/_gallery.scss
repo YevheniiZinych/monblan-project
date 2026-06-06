@@ -1,0 +1,334 @@
+.gallery {
+  margin-top: 18px;
+  padding-bottom: 50px;
+
+  font-size: 16px;
+  line-height: 1.2;
+
+  &__view-option {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-bottom: 23px;
+  }
+
+  &__view-rows {
+    width: 32px;
+    height: 28px;
+  }
+
+  &__view-grid {
+    width: 24px;
+    height: 22px;
+  }
+
+  &__view-rows,
+  &__view-grid {
+    color: #8f8f8f;
+    transition: color $time $cubic;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      filter: brightness(0) saturate(100%) invert(62%) sepia(0%) saturate(0%) hue-rotate(180deg)
+        brightness(93%) contrast(88%);
+      transition: filter $time $cubic;
+    }
+
+    &:hover,
+    &.is-active {
+      color: getColor("blue");
+
+      img {
+        filter: brightness(0) saturate(100%) invert(56%) sepia(68%) saturate(1605%) hue-rotate(176deg)
+          brightness(91%) contrast(87%);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 38px;
+
+    &.is-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px 8px;
+
+      .gallery__item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        padding-right: 0;
+      }
+
+      .gallery__item-img-wrap {
+        width: 100%;
+        height: 170px;
+      }
+
+      .gallery__item-content-wrap {
+        flex-wrap: wrap;
+        padding: 0 12px 18px;
+      }
+
+      .gallery__action-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+
+        @include tablet-910 {
+          flex-direction: row;
+        }
+      }
+
+      .gallery__item-upload {
+        align-self: flex-start;
+      }
+
+      .gallery__item-content {
+        &:nth-child(1) {
+          flex: 1 1 50%;
+        }
+        &:nth-child(2) {
+          flex: 1 1 50%;
+
+          @include tablet-910 {
+            align-items: end;
+          }
+        }
+        &:nth-child(3) {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 25px;
+          flex: 1 1 100%;
+
+          font-size: 14px;
+
+          @include tablet-640 {
+            margin-top: 0;
+          }
+        }
+
+        @include tablet-640 {
+          //   flex-direction: row;
+        }
+      }
+
+      //   .gallery__item-content:nth-child(1),
+      //   .gallery__item-content:nth-child(2) {
+      //     flex: 1 1 50%;
+      //   }
+
+      //   .gallery__item-content:nth-child(3) {
+
+      //   }
+
+      @media screen and (max-width: 1300px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      @include tablet-910 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        .gallery__item-img-wrap {
+          height: 340px;
+        }
+      }
+
+      @include tablet-640 {
+        grid-template-columns: 1fr;
+
+        .gallery__item-content-wrap {
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 12px 0;
+        }
+
+        .gallery__item-img-wrap {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 23 / 17;
+        }
+
+        .gallery__item-content {
+          &:nth-child(1),
+          &:nth-child(2) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            align-items: center;
+          }
+
+          &:nth-child(2) {
+            align-items: flex-start;
+          }
+
+          &:nth-child(3) {
+            flex: 1 1 100%;
+            max-width: 100%;
+          }
+        }
+
+        .gallery__item-content:nth-child(3) {
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 8px;
+        }
+
+        .gallery__item-upload {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 79px;
+    background-color: getColor("white");
+
+    @include tablet-640 {
+      align-items: flex-start;
+      gap: 12px;
+      padding-right: 20px;
+    }
+  }
+
+  &__item-content-wrap {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet-640 {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 25px;
+    }
+  }
+
+  &__action-container {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+  }
+
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include tablet-640 {
+      gap: 0;
+    }
+  }
+
+  &__item-img-wrap {
+    width: 86px;
+    height: 86px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    @include tablet-640 {
+      width: min(230px, 45vw);
+      height: 180px;
+      aspect-ratio: 23 / 17;
+      flex-shrink: 1;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__action-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__item-today-title,
+  &__item-current-time,
+  &__item-upload-test,
+  &__item-today-likes-count,
+  &__item-today-comment-count,
+  &__item-current-likes-count,
+  &__item-current-comment-count,
+  &__item-upload-date {
+    font-weight: 500;
+  }
+
+  &__item-today-likes-count,
+  &__item-today-comment-count,
+  &__item-current-likes-count,
+  &__item-current-comment-count,
+  &__item-upload-date {
+    font-size: 14px;
+  }
+
+  &__item-upload {
+    @include tablet-640 {
+      align-self: end;
+    }
+  }
+
+  &__load-more {
+    display: block;
+    min-width: 111px;
+    margin: 0 auto;
+    padding: 8px 26px;
+    border: 1px solid #000;
+    border-radius: 999px;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #8f8f8f;
+    background-color: transparent;
+    transition:
+      opacity $time $cubic,
+      background-color $time $cubic,
+      color $time $cubic;
+
+    &:hover:not(:disabled) {
+      color: getColor("main");
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.45;
+    }
+
+    @include tablet-640 {
+      width: 100%;
+      min-width: 0;
+      font-size: 16px;
+    }
+  }
+
+  .like-icon,
+  .comment-icon {
+    width: 14px;
+    height: 14px;
+  }
+}

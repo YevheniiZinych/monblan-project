@@ -1,0 +1,187 @@
+.header {
+  min-height: 172px;
+  width: 100%;
+  background-color: getColor("white-67");
+  box-shadow: $box-shadow;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    min-height: 172px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    width: 138px;
+    height: 138px;
+  }
+
+  &__main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-family: $montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    color: getColor("main");
+  }
+
+  &__start-date {
+    padding: 6px 12px;
+
+    border: 1px solid getColor("blue");
+    border-radius: 2px;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: getColor("blue");
+  }
+
+  &__meta-data {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    margin-bottom: 19px;
+
+    font-family: $roboto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: getColor("main");
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__datepicker {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  &__datepicker-container {
+    display: inline-flex;
+    align-items: stretch;
+    flex-shrink: 0;
+    width: 162px;
+    height: 28px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &__datepicker-input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    padding: 7px 0 7px 8px;
+
+    font-family: $roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+
+    color: getColor("input-value-color");
+    background-color: transparent;
+    outline: none;
+  }
+
+  &__datepicker-input::placeholder {
+    color: getColor("input-value-color");
+    font-size: 13px;
+  }
+
+  &__datepicker-clear,
+  &__datepicker-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    border-left: 1px solid #d8d8d8;
+    transition:
+      background-color $time $cubic,
+      opacity $time $cubic;
+  }
+
+  &__datepicker-clear:hover,
+  &__datepicker-toggle:hover {
+    background-color: #f5f5f5;
+  }
+
+  &__datepicker-clear {
+    background-color: getColor("light-gray");
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__datepicker-toggle {
+    background-color: getColor("light-gray");
+    img {
+      width: 18px;
+      height: 20px;
+    }
+  }
+
+  @include tablet-1024 {
+    .container {
+      align-items: flex-start;
+      gap: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+  @include tablet-910 {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: auto;
+    }
+
+    &__logo {
+      width: 96px;
+      height: 96px;
+    }
+
+    &__main-content,
+    &__meta-data {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__datepicker {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+}

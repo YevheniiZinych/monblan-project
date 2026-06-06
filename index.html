@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monblan</title>
+    <link rel="icon" type="image/png" href="./img/Logo@2x.png" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          class="header__logo"
+          src="./img/Logo.png"
+          srcset="./img/Logo.png 1x, ./img/Logo@2x.png 2x"
+          alt="Logo"
+          loading="lazy"
+        />
+        <div class="header__main-content">
+          <div class="header__title-wrap">
+            <h1 class="header__title">monblanproject</h1>
+            <span class="header__start-date">Start on 17-02-2016</span>
+          </div>
+          <div class="header__meta-data">
+            <div class="header__posts-count"><span>870</span> posts</div>
+            <div class="header__followers-count"><span>11,787</span> followers</div>
+            <div class="header__following-count"><span>112</span> following</div>
+          </div>
+          <div class="header__datepicker" data-header-datepicker>
+            <span>Date</span>
+            <div class="header__datepicker-container">
+              <input
+                class="header__datepicker-input"
+                id="header-datepicker"
+                type="text"
+                name="header-datepicker"
+                placeholder="from"
+                autocomplete="off"
+                readonly
+              />
+              <button class="header__datepicker-clear" type="button" aria-label="Clear selected date">
+                <img src="./img/svg/close-icon.svg" alt="" width="12" height="12" />
+              </button>
+              <button class="header__datepicker-toggle" type="button" aria-label="Open calendar">
+                <img src="./img/svg/calendar-icon.svg" alt="" width="24" height="24" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__view-option">
+            <button type="button" class="gallery__view-rows">
+              <img src="./img/svg/rows-icon.svg" alt="rows view button icon" loading="lazy" />
+            </button>
+            <button type="button" class="gallery__view-grid">
+              <img src="./img/svg/grid-icon.svg" alt="grid view button icon" loading="lazy" />
+            </button>
+          </div>
+          <ul class="gallery__list"></ul>
+          <button class="gallery__load-more" type="button">LOAD MORE</button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/air-datepicker.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

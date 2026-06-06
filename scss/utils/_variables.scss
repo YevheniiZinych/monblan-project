@@ -1,0 +1,33 @@
+$color: (
+  "main": #000000,
+  "blue": #3d8eda,
+  "light-gray": #d3d3d39e,
+  "white-67": #ffffffab,
+  "white": #ffffff,
+  "input-border": #dedede,
+  "input-value-color": #636264,
+);
+
+@function getColor($key) {
+  @return map-get($color, $key);
+}
+
+$time: 0.3s;
+$cubic: linear;
+
+$box-shadow:
+  0 4px 24px 0 #0000001f,
+  0 12px 24px 0 #0000001f inset;
+
+$roboto: "Roboto", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+
+$mobile-360: 359.98px;
+$mobile-480: 479.98px;
+$mobile-560: 559.98px;
+$mobile-640: 639.98px;
+$tablet-910: 909.98px;
+$tablet-768: 767.98px;
+$tablet-1024: 1023.98px;
+$desktop-1280: 1279.98px;
+$desktop-1440: 1439.98px;

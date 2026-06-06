@@ -1,0 +1,145 @@
+.air-datepicker {
+  --adp-background-color: transparent;
+  --adp-background-color-hover: transparent;
+  --adp-background-color-active: transparent;
+  --adp-border-color: #d8d8d8;
+  --adp-border-color-inner: #efefef;
+  --adp-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --adp-nav-arrow-color: #{getColor("main")};
+  --adp-day-name-color: #{getColor("main")};
+  --adp-day-name-color-hover: #{getColor("main")};
+  --adp-color-current-date: #{getColor("main")};
+  --adp-cell-background-color-selected: #{getColor("blue")};
+  --adp-cell-background-color-selected-hover: #{getColor("blue")};
+  --adp-cell-background-color-hover: rgba(61, 142, 218, 0.1);
+
+  width: 201px;
+  height: 215px;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+  background: transparent;
+  box-sizing: border-box;
+  font-family: $roboto;
+  box-shadow: none !important;
+
+  background-image: url(../img/datepicker-border.png);
+  background-repeat: no-repeat;
+  background-position: top 0px center;
+  background-size: 102% 101%;
+
+  &.-active- {
+    top: 140.484px !important;
+
+    @include tablet-910 {
+      top: 350.484px !important;
+    }
+  }
+}
+
+.air-datepicker--content {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.air-datepicker--pointer {
+  display: none;
+}
+
+.air-datepicker-nav {
+  padding: 9px 13px 0;
+  align-items: center;
+  border-bottom: none !important;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.air-datepicker-nav--title {
+  font-family: $roboto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: getColor("main");
+  text-align: center;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.air-datepicker-nav--title:hover,
+.air-datepicker-nav--title:active,
+.air-datepicker-nav--title.-disabled- {
+  background-color: transparent;
+}
+
+.air-datepicker-nav--title i {
+  color: inherit;
+  font-style: normal;
+}
+
+.air-datepicker-nav--action {
+  width: 14px;
+  height: 14px;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.air-datepicker-nav--action:hover {
+  background: transparent;
+}
+
+.air-datepicker-nav--action img {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+.air-datepicker-body--day-names {
+  margin: 6px 0 4px;
+  padding: 0 4px;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.air-datepicker-body--day-name {
+  width: auto;
+  height: 18px;
+  font-family: $roboto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: none;
+  color: getColor("main");
+}
+
+.air-datepicker-body--cells.-days- {
+  padding: 0 9px;
+  grid-auto-rows: 22px;
+  row-gap: 6px;
+  column-gap: 6px;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.air-datepicker-cell.-day- {
+  width: auto;
+  height: 22px;
+  border-radius: 2px;
+  font-family: $roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  color: getColor("main");
+}
+
+.air-datepicker-cell.-day-.-other-month- {
+  color: #c7c7c7;
+}
+
+.air-datepicker-cell.-selected-,
+.air-datepicker-cell.-selected-.-focus- {
+  color: #fff;
+  background: getColor("blue");
+}
