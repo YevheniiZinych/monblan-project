@@ -3,7 +3,7 @@
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -63,10 +63,17 @@ body {
   background-color: rgba(211, 211, 211, 0.2901960784);
   background-image: url(../img/main-bg-top.png), url(../img/main-bg-bottom.png);
   background-repeat: no-repeat;
-  background-position: top left, right bottom 42px;
-  background-size: 49% 410px, 190px 368px;
+  background-position:
+    top left,
+    right bottom 42px;
+  background-size:
+    49% 410px,
+    190px 368px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   body {
     background-image: url(../img/main-bg-top@2x.png), url(../img/main-bg-bottom@2x.png);
   }
@@ -79,41 +86,51 @@ body {
 }
 @media screen and (max-width: 909.98px) {
   body {
-    background-size: 100% 410px, 190px 368px;
+    background-size:
+      100% 410px,
+      190px 368px;
   }
 }
 
-.air-datepicker-cell.-year-.-other-decade-, .air-datepicker-cell.-day-.-other-month- {
+.air-datepicker-cell.-year-.-other-decade-,
+.air-datepicker-cell.-day-.-other-month- {
   color: var(--adp-color-other-month);
 }
 
-.air-datepicker-cell.-year-.-other-decade-:hover, .air-datepicker-cell.-day-.-other-month-:hover {
+.air-datepicker-cell.-year-.-other-decade-:hover,
+.air-datepicker-cell.-day-.-other-month-:hover {
   color: var(--adp-color-other-month-hover);
 }
 
-.-disabled-.-focus-.air-datepicker-cell.-year-.-other-decade-, .-disabled-.-focus-.air-datepicker-cell.-day-.-other-month- {
+.-disabled-.-focus-.air-datepicker-cell.-year-.-other-decade-,
+.-disabled-.-focus-.air-datepicker-cell.-day-.-other-month- {
   color: var(--adp-color-other-month);
 }
 
-.-selected-.air-datepicker-cell.-year-.-other-decade-, .-selected-.air-datepicker-cell.-day-.-other-month- {
+.-selected-.air-datepicker-cell.-year-.-other-decade-,
+.-selected-.air-datepicker-cell.-day-.-other-month- {
   color: #fff;
   background: var(--adp-background-color-selected-other-month);
 }
 
-.-selected-.-focus-.air-datepicker-cell.-year-.-other-decade-, .-selected-.-focus-.air-datepicker-cell.-day-.-other-month- {
+.-selected-.-focus-.air-datepicker-cell.-year-.-other-decade-,
+.-selected-.-focus-.air-datepicker-cell.-day-.-other-month- {
   background: var(--adp-background-color-selected-other-month-focused);
 }
 
-.-in-range-.air-datepicker-cell.-year-.-other-decade-, .-in-range-.air-datepicker-cell.-day-.-other-month- {
+.-in-range-.air-datepicker-cell.-year-.-other-decade-,
+.-in-range-.air-datepicker-cell.-day-.-other-month- {
   background-color: var(--adp-background-color-in-range);
   color: var(--adp-color);
 }
 
-.-in-range-.-focus-.air-datepicker-cell.-year-.-other-decade-, .-in-range-.-focus-.air-datepicker-cell.-day-.-other-month- {
+.-in-range-.-focus-.air-datepicker-cell.-year-.-other-decade-,
+.-in-range-.-focus-.air-datepicker-cell.-day-.-other-month- {
   background-color: var(--adp-background-color-in-range-focused);
 }
 
-.air-datepicker-cell.-year-.-other-decade-:empty, .air-datepicker-cell.-day-.-other-month-:empty {
+.air-datepicker-cell.-year-.-other-decade-:empty,
+.air-datepicker-cell.-day-.-other-month-:empty {
   background: none;
   border: none;
 }
@@ -121,18 +138,18 @@ body {
 .air-datepicker-cell {
   border-radius: var(--adp-cell-border-radius);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   z-index: 1;
 }
 
@@ -174,7 +191,8 @@ body {
   border-radius: 0;
 }
 
-.air-datepicker-cell.-in-range-:hover, .air-datepicker-cell.-in-range-.-focus- {
+.air-datepicker-cell.-in-range-:hover,
+.air-datepicker-cell.-in-range-.-focus- {
   background: var(--adp-cell-background-color-in-range-hover);
 }
 
@@ -230,14 +248,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.8em;
@@ -275,30 +293,31 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-bottom: 1px solid var(--adp-border-color-inner);
   min-height: var(--adp-nav-height);
   padding: var(--adp-padding);
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .-only-timepicker- .air-datepicker-nav {
   display: none;
 }
 
-.air-datepicker-nav--title, .air-datepicker-nav--action {
+.air-datepicker-nav--title,
+.air-datepicker-nav--action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .air-datepicker-nav--action {
@@ -307,7 +326,7 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-      user-select: none;
+  user-select: none;
 }
 
 .air-datepicker-nav--action:hover {
@@ -396,11 +415,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -411,8 +430,8 @@ body {
   grid-template-columns: max-content 1fr;
   grid-column-gap: 12px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   padding: 0 var(--adp-time-padding-inner);
 }
@@ -426,11 +445,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   font-size: 14px;
   text-align: center;
 }
@@ -440,7 +459,8 @@ body {
   line-height: 1;
 }
 
-.air-datepicker-time--current-hours, .air-datepicker-time--current-minutes {
+.air-datepicker-time--current-hours,
+.air-datepicker-time--current-minutes {
   line-height: 1;
   font-size: 19px;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -448,7 +468,8 @@ body {
   z-index: 1;
 }
 
-.air-datepicker-time--current-hours:after, .air-datepicker-time--current-minutes:after {
+.air-datepicker-time--current-hours:after,
+.air-datepicker-time--current-minutes:after {
   content: "";
   background: var(--adp-background-color-hover);
   border-radius: var(--adp-border-radius);
@@ -461,14 +482,15 @@ body {
   opacity: 0;
 }
 
-.air-datepicker-time--current-hours.-focus-:after, .air-datepicker-time--current-minutes.-focus-:after {
+.air-datepicker-time--current-hours.-focus-:after,
+.air-datepicker-time--current-minutes.-focus-:after {
   opacity: 1;
 }
 
 .air-datepicker-time--current-ampm {
   text-transform: uppercase;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   color: var(--adp-time-day-period-color);
   margin-left: 6px;
   font-size: 11px;
@@ -480,24 +502,32 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 11px;
   height: 17px;
-  background: -webkit-gradient(linear, left top, right top, from(var(--adp-time-track-color)), to(var(--adp-time-track-color))) left 50%/100% var(--adp-time-track-height) no-repeat;
-  background: linear-gradient(to right, var(--adp-time-track-color), var(--adp-time-track-color)) left 50%/100% var(--adp-time-track-height) no-repeat;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--adp-time-track-color)),
+      to(var(--adp-time-track-color))
+    )
+    left 50%/100% var(--adp-time-track-height) no-repeat;
+  background: linear-gradient(to right, var(--adp-time-track-color), var(--adp-time-track-color)) left
+    50%/100% var(--adp-time-track-height) no-repeat;
 }
 
 .air-datepicker-time--row:first-child {
   margin-bottom: 4px;
 }
 
-.air-datepicker-time--row input[type=range] {
+.air-datepicker-time--row input[type="range"] {
   background: none;
   cursor: pointer;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   height: 100%;
   width: 100%;
   padding: 0;
@@ -505,48 +535,48 @@ body {
   -webkit-appearance: none;
 }
 
-.air-datepicker-time--row input[type=range]::-webkit-slider-thumb {
+.air-datepicker-time--row input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 
-.air-datepicker-time--row input[type=range]::-ms-tooltip {
+.air-datepicker-time--row input[type="range"]::-ms-tooltip {
   display: none;
 }
 
-.air-datepicker-time--row input[type=range]:hover::-webkit-slider-thumb {
+.air-datepicker-time--row input[type="range"]:hover::-webkit-slider-thumb {
   border-color: var(--adp-time-track-color-hover);
 }
 
-.air-datepicker-time--row input[type=range]:hover::-moz-range-thumb {
+.air-datepicker-time--row input[type="range"]:hover::-moz-range-thumb {
   border-color: var(--adp-time-track-color-hover);
 }
 
-.air-datepicker-time--row input[type=range]:hover::-ms-thumb {
+.air-datepicker-time--row input[type="range"]:hover::-ms-thumb {
   border-color: var(--adp-time-track-color-hover);
 }
 
-.air-datepicker-time--row input[type=range]:focus {
+.air-datepicker-time--row input[type="range"]:focus {
   outline: none;
 }
 
-.air-datepicker-time--row input[type=range]:focus::-webkit-slider-thumb {
+.air-datepicker-time--row input[type="range"]:focus::-webkit-slider-thumb {
   background: var(--adp-cell-background-color-selected);
   border-color: var(--adp-cell-background-color-selected);
 }
 
-.air-datepicker-time--row input[type=range]:focus::-moz-range-thumb {
+.air-datepicker-time--row input[type="range"]:focus::-moz-range-thumb {
   background: var(--adp-cell-background-color-selected);
   border-color: var(--adp-cell-background-color-selected);
 }
 
-.air-datepicker-time--row input[type=range]:focus::-ms-thumb {
+.air-datepicker-time--row input[type="range"]:focus::-ms-thumb {
   background: var(--adp-cell-background-color-selected);
   border-color: var(--adp-cell-background-color-selected);
 }
 
-.air-datepicker-time--row input[type=range]::-webkit-slider-thumb {
+.air-datepicker-time--row input[type="range"]::-webkit-slider-thumb {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 12px;
   width: 12px;
   border-radius: 3px;
@@ -557,7 +587,7 @@ body {
   transition: background var(--adp-transition-duration);
 }
 
-.air-datepicker-time--row input[type=range]::-moz-range-thumb {
+.air-datepicker-time--row input[type="range"]::-moz-range-thumb {
   box-sizing: border-box;
   height: 12px;
   width: 12px;
@@ -569,7 +599,7 @@ body {
   transition: background var(--adp-transition-duration);
 }
 
-.air-datepicker-time--row input[type=range]::-ms-thumb {
+.air-datepicker-time--row input[type="range"]::-ms-thumb {
   box-sizing: border-box;
   height: 12px;
   width: 12px;
@@ -581,11 +611,11 @@ body {
   transition: background var(--adp-transition-duration);
 }
 
-.air-datepicker-time--row input[type=range]::-webkit-slider-thumb {
+.air-datepicker-time--row input[type="range"]::-webkit-slider-thumb {
   margin-top: calc(var(--adp-time-thumb-size) / 2 * -1);
 }
 
-.air-datepicker-time--row input[type=range]::-webkit-slider-runnable-track {
+.air-datepicker-time--row input[type="range"]::-webkit-slider-runnable-track {
   border: none;
   height: var(--adp-time-track-height);
   cursor: pointer;
@@ -593,7 +623,7 @@ body {
   background: rgba(0, 0, 0, 0);
 }
 
-.air-datepicker-time--row input[type=range]::-moz-range-track {
+.air-datepicker-time--row input[type="range"]::-moz-range-track {
   border: none;
   height: var(--adp-time-track-height);
   cursor: pointer;
@@ -601,7 +631,7 @@ body {
   background: rgba(0, 0, 0, 0);
 }
 
-.air-datepicker-time--row input[type=range]::-ms-track {
+.air-datepicker-time--row input[type="range"]::-ms-track {
   border: none;
   height: var(--adp-time-track-height);
   cursor: pointer;
@@ -609,29 +639,31 @@ body {
   background: rgba(0, 0, 0, 0);
 }
 
-.air-datepicker-time--row input[type=range]::-ms-fill-lower {
+.air-datepicker-time--row input[type="range"]::-ms-fill-lower {
   background: rgba(0, 0, 0, 0);
 }
 
-.air-datepicker-time--row input[type=range]::-ms-fill-upper {
+.air-datepicker-time--row input[type="range"]::-ms-fill-upper {
   background: rgba(0, 0, 0, 0);
 }
 
 .air-datepicker {
-  --adp-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --adp-font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   --adp-font-size: 14px;
   --adp-width: 246px;
   --adp-z-index: 100;
   --adp-padding: 4px;
   --adp-grid-areas: "nav" "body" "timepicker" "buttons";
-  --adp-transition-duration: .3s;
+  --adp-transition-duration: 0.3s;
   --adp-transition-ease: ease-out;
   --adp-transition-offset: 8px;
   --adp-background-color: #fff;
   --adp-background-color-hover: #f0f0f0;
   --adp-background-color-active: #eaeaea;
-  --adp-background-color-in-range: rgba(92, 196, 239, .1);
-  --adp-background-color-in-range-focused: rgba(92, 196, 239, .2);
+  --adp-background-color-in-range: rgba(92, 196, 239, 0.1);
+  --adp-background-color-in-range-focused: rgba(92, 196, 239, 0.2);
   --adp-background-color-selected-other-month-focused: #8ad5f4;
   --adp-background-color-selected-other-month: #a2ddf6;
   --adp-color: #4a4a4a;
@@ -687,8 +719,8 @@ body {
 }
 
 .air-datepicker-overlay {
-  --adp-overlay-background-color: rgba(0, 0, 0, .3);
-  --adp-overlay-transition-duration: .3s;
+  --adp-overlay-background-color: rgba(0, 0, 0, 0.3);
+  --adp-overlay-transition-duration: 0.3s;
   --adp-overlay-transition-ease: ease-out;
   --adp-overlay-z-index: 99;
 }
@@ -697,10 +729,10 @@ body {
   background: var(--adp-background-color);
   border: 1px solid var(--adp-border-color);
   -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: var(--adp-border-radius);
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, -webkit-max-content);
@@ -711,10 +743,19 @@ body {
   color: var(--adp-color);
   width: var(--adp-width);
   position: absolute;
-  -webkit-transition: opacity var(--adp-transition-duration) var(--adp-transition-ease), -webkit-transform var(--adp-transition-duration) var(--adp-transition-ease);
-  transition: opacity var(--adp-transition-duration) var(--adp-transition-ease), -webkit-transform var(--adp-transition-duration) var(--adp-transition-ease);
-  transition: opacity var(--adp-transition-duration) var(--adp-transition-ease), transform var(--adp-transition-duration) var(--adp-transition-ease);
-  transition: opacity var(--adp-transition-duration) var(--adp-transition-ease), transform var(--adp-transition-duration) var(--adp-transition-ease), -webkit-transform var(--adp-transition-duration) var(--adp-transition-ease);
+  -webkit-transition:
+    opacity var(--adp-transition-duration) var(--adp-transition-ease),
+    -webkit-transform var(--adp-transition-duration) var(--adp-transition-ease);
+  transition:
+    opacity var(--adp-transition-duration) var(--adp-transition-ease),
+    -webkit-transform var(--adp-transition-duration) var(--adp-transition-ease);
+  transition:
+    opacity var(--adp-transition-duration) var(--adp-transition-ease),
+    transform var(--adp-transition-duration) var(--adp-transition-ease);
+  transition:
+    opacity var(--adp-transition-duration) var(--adp-transition-ease),
+    transform var(--adp-transition-duration) var(--adp-transition-ease),
+    -webkit-transform var(--adp-transition-duration) var(--adp-transition-ease);
   z-index: var(--adp-z-index);
 }
 
@@ -724,32 +765,32 @@ body {
 
 .air-datepicker.-from-top- {
   -webkit-transform: translateY(calc(var(--adp-transition-offset) * -1));
-      -ms-transform: translateY(calc(var(--adp-transition-offset) * -1));
-          transform: translateY(calc(var(--adp-transition-offset) * -1));
+  -ms-transform: translateY(calc(var(--adp-transition-offset) * -1));
+  transform: translateY(calc(var(--adp-transition-offset) * -1));
 }
 
 .air-datepicker.-from-right- {
   -webkit-transform: translateX(var(--adp-transition-offset));
-      -ms-transform: translateX(var(--adp-transition-offset));
-          transform: translateX(var(--adp-transition-offset));
+  -ms-transform: translateX(var(--adp-transition-offset));
+  transform: translateX(var(--adp-transition-offset));
 }
 
 .air-datepicker.-from-bottom- {
   -webkit-transform: translateY(var(--adp-transition-offset));
-      -ms-transform: translateY(var(--adp-transition-offset));
-          transform: translateY(var(--adp-transition-offset));
+  -ms-transform: translateY(var(--adp-transition-offset));
+  transform: translateY(var(--adp-transition-offset));
 }
 
 .air-datepicker.-from-left- {
   -webkit-transform: translateX(calc(var(--adp-transition-offset) * -1));
-      -ms-transform: translateX(calc(var(--adp-transition-offset) * -1));
-          transform: translateX(calc(var(--adp-transition-offset) * -1));
+  -ms-transform: translateX(calc(var(--adp-transition-offset) * -1));
+  transform: translateX(calc(var(--adp-transition-offset) * -1));
 }
 
 .air-datepicker.-active-:not(.-custom-position-) {
   -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
   opacity: 1;
 }
 
@@ -761,14 +802,14 @@ body {
 .air-datepicker.-inline- {
   border-color: var(--adp-border-color-inline);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   position: static;
   left: auto;
   right: auto;
   opacity: 1;
   -webkit-transform: none;
-      -ms-transform: none;
-          transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 .air-datepicker.-inline- .air-datepicker--pointer {
@@ -797,14 +838,14 @@ body {
 
 .air-datepicker.-is-mobile-:not(.-custom-position-) {
   -webkit-transform: translate(-50%, calc(-50% + var(--adp-transition-offset)));
-      -ms-transform: translate(-50%, calc(-50% + var(--adp-transition-offset)));
-          transform: translate(-50%, calc(-50% + var(--adp-transition-offset)));
+  -ms-transform: translate(-50%, calc(-50% + var(--adp-transition-offset)));
+  transform: translate(-50%, calc(-50% + var(--adp-transition-offset)));
 }
 
 .air-datepicker.-is-mobile-.-active-:not(.-custom-position-) {
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .air-datepicker.-custom-position- {
@@ -836,70 +877,100 @@ body {
   width: var(--adp-pointer-size);
   height: var(--adp-pointer-size);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.-top-left- .air-datepicker--pointer, .-top-center- .air-datepicker--pointer, .-top-right- .air-datepicker--pointer, [data-popper-placement^=top] .air-datepicker--pointer {
+.-top-left- .air-datepicker--pointer,
+.-top-center- .air-datepicker--pointer,
+.-top-right- .air-datepicker--pointer,
+[data-popper-placement^="top"] .air-datepicker--pointer {
   top: calc(100% - var(--pointer-half-size) + 1px);
 }
 
-.-top-left- .air-datepicker--pointer:after, .-top-center- .air-datepicker--pointer:after, .-top-right- .air-datepicker--pointer:after, [data-popper-placement^=top] .air-datepicker--pointer:after {
+.-top-left- .air-datepicker--pointer:after,
+.-top-center- .air-datepicker--pointer:after,
+.-top-right- .air-datepicker--pointer:after,
+[data-popper-placement^="top"] .air-datepicker--pointer:after {
   -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
-.-right-top- .air-datepicker--pointer, .-right-center- .air-datepicker--pointer, .-right-bottom- .air-datepicker--pointer, [data-popper-placement^=right] .air-datepicker--pointer {
+.-right-top- .air-datepicker--pointer,
+.-right-center- .air-datepicker--pointer,
+.-right-bottom- .air-datepicker--pointer,
+[data-popper-placement^="right"] .air-datepicker--pointer {
   right: calc(100% - var(--pointer-half-size) + 1px);
 }
 
-.-right-top- .air-datepicker--pointer:after, .-right-center- .air-datepicker--pointer:after, .-right-bottom- .air-datepicker--pointer:after, [data-popper-placement^=right] .air-datepicker--pointer:after {
+.-right-top- .air-datepicker--pointer:after,
+.-right-center- .air-datepicker--pointer:after,
+.-right-bottom- .air-datepicker--pointer:after,
+[data-popper-placement^="right"] .air-datepicker--pointer:after {
   -webkit-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-          transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
-.-bottom-left- .air-datepicker--pointer, .-bottom-center- .air-datepicker--pointer, .-bottom-right- .air-datepicker--pointer, [data-popper-placement^=bottom] .air-datepicker--pointer {
+.-bottom-left- .air-datepicker--pointer,
+.-bottom-center- .air-datepicker--pointer,
+.-bottom-right- .air-datepicker--pointer,
+[data-popper-placement^="bottom"] .air-datepicker--pointer {
   bottom: calc(100% - var(--pointer-half-size) + 1px);
 }
 
-.-bottom-left- .air-datepicker--pointer:after, .-bottom-center- .air-datepicker--pointer:after, .-bottom-right- .air-datepicker--pointer:after, [data-popper-placement^=bottom] .air-datepicker--pointer:after {
+.-bottom-left- .air-datepicker--pointer:after,
+.-bottom-center- .air-datepicker--pointer:after,
+.-bottom-right- .air-datepicker--pointer:after,
+[data-popper-placement^="bottom"] .air-datepicker--pointer:after {
   -webkit-transform: rotate(315deg);
-      -ms-transform: rotate(315deg);
-          transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  transform: rotate(315deg);
 }
 
-.-left-top- .air-datepicker--pointer, .-left-center- .air-datepicker--pointer, .-left-bottom- .air-datepicker--pointer, [data-popper-placement^=left] .air-datepicker--pointer {
+.-left-top- .air-datepicker--pointer,
+.-left-center- .air-datepicker--pointer,
+.-left-bottom- .air-datepicker--pointer,
+[data-popper-placement^="left"] .air-datepicker--pointer {
   left: calc(100% - var(--pointer-half-size) + 1px);
 }
 
-.-left-top- .air-datepicker--pointer:after, .-left-center- .air-datepicker--pointer:after, .-left-bottom- .air-datepicker--pointer:after, [data-popper-placement^=left] .air-datepicker--pointer:after {
+.-left-top- .air-datepicker--pointer:after,
+.-left-center- .air-datepicker--pointer:after,
+.-left-bottom- .air-datepicker--pointer:after,
+[data-popper-placement^="left"] .air-datepicker--pointer:after {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.-top-left- .air-datepicker--pointer, .-bottom-left- .air-datepicker--pointer {
+.-top-left- .air-datepicker--pointer,
+.-bottom-left- .air-datepicker--pointer {
   left: var(--adp-pointer-offset);
 }
 
-.-top-right- .air-datepicker--pointer, .-bottom-right- .air-datepicker--pointer {
+.-top-right- .air-datepicker--pointer,
+.-bottom-right- .air-datepicker--pointer {
   right: var(--adp-pointer-offset);
 }
 
-.-top-center- .air-datepicker--pointer, .-bottom-center- .air-datepicker--pointer {
+.-top-center- .air-datepicker--pointer,
+.-bottom-center- .air-datepicker--pointer {
   left: calc(50% - var(--adp-pointer-size) / 2);
 }
 
-.-left-top- .air-datepicker--pointer, .-right-top- .air-datepicker--pointer {
+.-left-top- .air-datepicker--pointer,
+.-right-top- .air-datepicker--pointer {
   top: var(--adp-pointer-offset);
 }
 
-.-left-bottom- .air-datepicker--pointer, .-right-bottom- .air-datepicker--pointer {
+.-left-bottom- .air-datepicker--pointer,
+.-right-bottom- .air-datepicker--pointer {
   bottom: var(--adp-pointer-offset);
 }
 
-.-left-center- .air-datepicker--pointer, .-right-center- .air-datepicker--pointer {
+.-left-center- .air-datepicker--pointer,
+.-right-center- .air-datepicker--pointer {
   top: calc(50% - var(--adp-pointer-size) / 2);
 }
 
@@ -909,7 +980,7 @@ body {
 
 .air-datepicker--content {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   padding: var(--adp-padding);
   grid-area: body;
 }
@@ -926,7 +997,8 @@ body {
   grid-area: buttons;
 }
 
-.air-datepicker--buttons, .air-datepicker--time {
+.air-datepicker--buttons,
+.air-datepicker--time {
   padding: var(--adp-padding);
   border-top: 1px solid var(--adp-border-color-inner);
 }
@@ -939,10 +1011,22 @@ body {
   width: 0;
   height: 0;
   opacity: 0;
-  -webkit-transition: opacity var(--adp-overlay-transition-duration) var(--adp-overlay-transition-ease), left 0s, height 0s, width 0s;
-  transition: opacity var(--adp-overlay-transition-duration) var(--adp-overlay-transition-ease), left 0s, height 0s, width 0s;
-  -webkit-transition-delay: 0s, var(--adp-overlay-transition-duration), var(--adp-overlay-transition-duration), var(--adp-overlay-transition-duration);
-          transition-delay: 0s, var(--adp-overlay-transition-duration), var(--adp-overlay-transition-duration), var(--adp-overlay-transition-duration);
+  -webkit-transition:
+    opacity var(--adp-overlay-transition-duration) var(--adp-overlay-transition-ease),
+    left 0s,
+    height 0s,
+    width 0s;
+  transition:
+    opacity var(--adp-overlay-transition-duration) var(--adp-overlay-transition-ease),
+    left 0s,
+    height 0s,
+    width 0s;
+  -webkit-transition-delay:
+    0s, var(--adp-overlay-transition-duration), var(--adp-overlay-transition-duration),
+    var(--adp-overlay-transition-duration);
+  transition-delay:
+    0s, var(--adp-overlay-transition-duration), var(--adp-overlay-transition-duration),
+    var(--adp-overlay-transition-duration);
   z-index: var(--adp-overlay-z-index);
 }
 
@@ -950,8 +1034,14 @@ body {
   opacity: 1;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity var(--adp-overlay-transition-duration) var(--adp-overlay-transition-ease), height 0s, width 0s;
-  transition: opacity var(--adp-overlay-transition-duration) var(--adp-overlay-transition-ease), height 0s, width 0s;
+  -webkit-transition:
+    opacity var(--adp-overlay-transition-duration) var(--adp-overlay-transition-ease),
+    height 0s,
+    width 0s;
+  transition:
+    opacity var(--adp-overlay-transition-duration) var(--adp-overlay-transition-ease),
+    height 0s,
+    width 0s;
 }
 
 .container {
@@ -982,25 +1072,29 @@ body {
   min-height: 172px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.6705882353);
-  -webkit-box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1215686275), 0 12px 24px 0 rgba(0, 0, 0, 0.1215686275) inset;
-          box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1215686275), 0 12px 24px 0 rgba(0, 0, 0, 0.1215686275) inset;
+  -webkit-box-shadow:
+    0 4px 24px 0 rgba(0, 0, 0, 0.1215686275),
+    0 12px 24px 0 rgba(0, 0, 0, 0.1215686275) inset;
+  box-shadow:
+    0 4px 24px 0 rgba(0, 0, 0, 0.1215686275),
+    0 12px 24px 0 rgba(0, 0, 0, 0.1215686275) inset;
 }
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 90px;
   min-height: 172px;
 }
 .header__logo {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 138px;
   height: 138px;
 }
@@ -1010,18 +1104,18 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .header__title-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 16px;
   margin-bottom: 16px;
 }
@@ -1046,8 +1140,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 28px;
   margin-bottom: 19px;
   font-family: "Roboto", sans-serif;
@@ -1064,8 +1158,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 16px;
 }
 .header__datepicker span {
@@ -1076,10 +1170,10 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 162px;
   height: 28px;
   border: 1px solid #d8d8d8;
@@ -1087,7 +1181,7 @@ body {
   overflow: hidden;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
-          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
 }
 .header__datepicker-input {
   width: 100%;
@@ -1122,22 +1216,28 @@ body {
   color: #636264;
   font-size: 13px;
 }
-.header__datepicker-clear, .header__datepicker-toggle {
+.header__datepicker-clear,
+.header__datepicker-toggle {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 48px;
   border-left: 1px solid #d8d8d8;
-  -webkit-transition: background-color 0.3s linear, opacity 0.3s linear;
-  transition: background-color 0.3s linear, opacity 0.3s linear;
+  -webkit-transition:
+    background-color 0.3s linear,
+    opacity 0.3s linear;
+  transition:
+    background-color 0.3s linear,
+    opacity 0.3s linear;
 }
-.header__datepicker-clear:hover, .header__datepicker-toggle:hover {
+.header__datepicker-clear:hover,
+.header__datepicker-toggle:hover {
   background-color: #f5f5f5;
 }
 .header__datepicker-clear {
@@ -1157,8 +1257,8 @@ body {
 @media screen and (max-width: 1023.98px) {
   .header .container {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     gap: 24px;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -1168,25 +1268,26 @@ body {
   .header .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     min-height: auto;
   }
   .header__logo {
     width: 96px;
     height: 96px;
   }
-  .header__main-content, .header__meta-data {
+  .header__main-content,
+  .header__meta-data {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     width: 100%;
   }
   .header__title {
@@ -1210,11 +1311,11 @@ body {
   display: flex;
   gap: 18px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-right: 10px;
   margin-bottom: 23px;
 }
@@ -1226,28 +1327,42 @@ body {
   width: 24px;
   height: 22px;
 }
-.gallery__view-rows, .gallery__view-grid {
+.gallery__view-rows,
+.gallery__view-grid {
   color: #8f8f8f;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
-.gallery__view-rows img, .gallery__view-grid img {
+.gallery__view-rows img,
+.gallery__view-grid img {
   display: block;
   width: 100%;
   height: 100%;
-  -webkit-filter: brightness(0) saturate(100%) invert(62%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(93%) contrast(88%);
-          filter: brightness(0) saturate(100%) invert(62%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(93%) contrast(88%);
+  -webkit-filter: brightness(0) saturate(100%) invert(62%) sepia(0%) saturate(0%) hue-rotate(180deg)
+    brightness(93%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(62%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(93%)
+    contrast(88%);
   -webkit-transition: -webkit-filter 0.3s linear;
   transition: -webkit-filter 0.3s linear;
   transition: filter 0.3s linear;
-  transition: filter 0.3s linear, -webkit-filter 0.3s linear;
+  transition:
+    filter 0.3s linear,
+    -webkit-filter 0.3s linear;
 }
-.gallery__view-rows:hover, .gallery__view-rows.is-active, .gallery__view-grid:hover, .gallery__view-grid.is-active {
+.gallery__view-rows:hover,
+.gallery__view-rows.is-active,
+.gallery__view-grid:hover,
+.gallery__view-grid.is-active {
   color: #3d8eda;
 }
-.gallery__view-rows:hover img, .gallery__view-rows.is-active img, .gallery__view-grid:hover img, .gallery__view-grid.is-active img {
-  -webkit-filter: brightness(0) saturate(100%) invert(56%) sepia(68%) saturate(1605%) hue-rotate(176deg) brightness(91%) contrast(87%);
-          filter: brightness(0) saturate(100%) invert(56%) sepia(68%) saturate(1605%) hue-rotate(176deg) brightness(91%) contrast(87%);
+.gallery__view-rows:hover img,
+.gallery__view-rows.is-active img,
+.gallery__view-grid:hover img,
+.gallery__view-grid.is-active img {
+  -webkit-filter: brightness(0) saturate(100%) invert(56%) sepia(68%) saturate(1605%) hue-rotate(176deg)
+    brightness(91%) contrast(87%);
+  filter: brightness(0) saturate(100%) invert(56%) sepia(68%) saturate(1605%) hue-rotate(176deg)
+    brightness(91%) contrast(87%);
 }
 .gallery__list {
   display: -webkit-box;
@@ -1255,8 +1370,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 18px;
   margin-bottom: 38px;
 }
@@ -1268,11 +1383,11 @@ body {
 .gallery__list.is-grid .gallery__item {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   gap: 10px;
   padding-right: 0;
 }
@@ -1282,46 +1397,46 @@ body {
 }
 .gallery__list.is-grid .gallery__item-content-wrap {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0 12px 18px;
 }
 .gallery__list.is-grid .gallery__action-container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   gap: 6px;
 }
 @media screen and (max-width: 909.98px) {
   .gallery__list.is-grid .gallery__action-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 .gallery__list.is-grid .gallery__item-upload {
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 .gallery__list.is-grid .gallery__item-content:nth-child(1) {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 .gallery__list.is-grid .gallery__item-content:nth-child(2) {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 @media screen and (max-width: 909.98px) {
   .gallery__list.is-grid .gallery__item-content:nth-child(2) {
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -ms-flex-align: end;
+    align-items: end;
   }
 }
 .gallery__list.is-grid .gallery__item-content:nth-child(3) {
@@ -1330,20 +1445,20 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 25px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
   font-size: 14px;
 }
 @media screen and (max-width: 639.98px) {
@@ -1371,14 +1486,14 @@ body {
   .gallery__list.is-grid .gallery__item-content-wrap {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     gap: 12px 0;
   }
   .gallery__list.is-grid .gallery__item-img-wrap {
@@ -1386,44 +1501,45 @@ body {
     height: auto;
     aspect-ratio: 23/17;
   }
-  .gallery__list.is-grid .gallery__item-content:nth-child(1), .gallery__list.is-grid .gallery__item-content:nth-child(2) {
+  .gallery__list.is-grid .gallery__item-content:nth-child(1),
+  .gallery__list.is-grid .gallery__item-content:nth-child(2) {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .gallery__list.is-grid .gallery__item-content:nth-child(2) {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   .gallery__list.is-grid .gallery__item-content:nth-child(3) {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
     max-width: 100%;
   }
   .gallery__list.is-grid .gallery__item-content:nth-child(3) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     gap: 8px;
   }
   .gallery__list.is-grid .gallery__item-upload {
     -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
 }
 .gallery__item {
@@ -1431,17 +1547,46 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 30px;
   padding-right: 79px;
   background-color: #ffffff;
+  cursor: pointer;
+  -webkit-transition:
+    background-color 0.3s linear,
+    -webkit-transform 0.3s linear,
+    -webkit-box-shadow 0.3s linear;
+  transition:
+    background-color 0.3s linear,
+    -webkit-transform 0.3s linear,
+    -webkit-box-shadow 0.3s linear;
+  transition:
+    transform 0.3s linear,
+    box-shadow 0.3s linear,
+    background-color 0.3s linear;
+  transition:
+    transform 0.3s linear,
+    box-shadow 0.3s linear,
+    background-color 0.3s linear,
+    -webkit-transform 0.3s linear,
+    -webkit-box-shadow 0.3s linear;
+}
+@media (hover: hover) {
+  .gallery__item:hover {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    background-color: #fcfcfc;
+    -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  }
 }
 @media screen and (max-width: 639.98px) {
   .gallery__item {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     gap: 12px;
     padding-right: 20px;
   }
@@ -1453,24 +1598,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 @media screen and (max-width: 639.98px) {
   .gallery__item-content-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 25px;
   }
 }
@@ -1480,8 +1625,8 @@ body {
   display: flex;
   gap: 26px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .gallery__item-content {
   display: -webkit-box;
@@ -1489,8 +1634,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 8px;
 }
 @media screen and (max-width: 639.98px) {
@@ -1502,7 +1647,7 @@ body {
   width: 86px;
   height: 86px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   overflow: hidden;
 }
 @media screen and (max-width: 639.98px) {
@@ -1511,7 +1656,7 @@ body {
     height: 180px;
     aspect-ratio: 23/17;
     -ms-flex-negative: 1;
-        flex-shrink: 1;
+    flex-shrink: 1;
   }
 }
 .gallery__item-img-wrap img {
@@ -1519,27 +1664,38 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .gallery__action-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 6px;
 }
-.gallery__item-today-title, .gallery__item-current-time, .gallery__item-upload-test, .gallery__item-today-likes-count, .gallery__item-today-comment-count, .gallery__item-current-likes-count, .gallery__item-current-comment-count, .gallery__item-upload-date {
+.gallery__item-today-title,
+.gallery__item-current-time,
+.gallery__item-upload-test,
+.gallery__item-today-likes-count,
+.gallery__item-today-comment-count,
+.gallery__item-current-likes-count,
+.gallery__item-current-comment-count,
+.gallery__item-upload-date {
   font-weight: 500;
 }
-.gallery__item-today-likes-count, .gallery__item-today-comment-count, .gallery__item-current-likes-count, .gallery__item-current-comment-count, .gallery__item-upload-date {
+.gallery__item-today-likes-count,
+.gallery__item-today-comment-count,
+.gallery__item-current-likes-count,
+.gallery__item-current-comment-count,
+.gallery__item-upload-date {
   font-size: 14px;
 }
 @media screen and (max-width: 639.98px) {
   .gallery__item-upload {
     -ms-flex-item-align: end;
-        align-self: end;
+    align-self: end;
   }
 }
 .gallery__load-more {
@@ -1555,8 +1711,14 @@ body {
   line-height: 1;
   color: #8f8f8f;
   background-color: transparent;
-  -webkit-transition: opacity 0.3s linear, background-color 0.3s linear, color 0.3s linear;
-  transition: opacity 0.3s linear, background-color 0.3s linear, color 0.3s linear;
+  -webkit-transition:
+    opacity 0.3s linear,
+    background-color 0.3s linear,
+    color 0.3s linear;
+  transition:
+    opacity 0.3s linear,
+    background-color 0.3s linear,
+    color 0.3s linear;
 }
 .gallery__load-more:hover:not(:disabled) {
   color: #000000;
@@ -1601,10 +1763,10 @@ body {
   background-color: transparent;
   background: transparent;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   background-image: url(../img/datepicker-border.png);
   background-repeat: no-repeat;
   background-position: top 0px center;
@@ -1623,7 +1785,7 @@ body {
   padding: 0;
   background-color: transparent;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .air-datepicker--pointer {
@@ -1633,12 +1795,12 @@ body {
 .air-datepicker-nav {
   padding: 9px 13px 0;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-bottom: none !important;
   background-color: transparent;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .air-datepicker-nav--title {
@@ -1650,7 +1812,7 @@ body {
   text-align: center;
   background-color: transparent;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .air-datepicker-nav--title:hover,
@@ -1670,7 +1832,7 @@ body {
   border-radius: 0;
   background-color: transparent;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .air-datepicker-nav--action:hover {
@@ -1688,7 +1850,7 @@ body {
   padding: 0 4px;
   background-color: transparent;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .air-datepicker-body--day-name {
@@ -1707,11 +1869,11 @@ body {
   grid-auto-rows: 22px;
   row-gap: 6px;
   -webkit-column-gap: 6px;
-     -moz-column-gap: 6px;
-          column-gap: 6px;
+  -moz-column-gap: 6px;
+  column-gap: 6px;
   background-color: transparent;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .air-datepicker-cell.-day- {
@@ -1733,4 +1895,4 @@ body {
 .air-datepicker-cell.-selected-.-focus- {
   color: #fff;
   background: #3d8eda;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
